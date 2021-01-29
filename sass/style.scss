@@ -1,16 +1,45 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    // max-width: 1925px;
+    margin: auto;
     @import './utilities/header.scss';
+    @import './utilities/features.scss';
 
-
-
-    .features{
-        height: 600px;
-        width: 100%;
+    .drapDrop{
+        position: relative;
+        background-color: #0e1a35;
+        height: 900px;
+        margin-top: 20%;
+        overflow: hidden;
+        .images-background {
+            height: 900px;
+            overflow: hidden;
+            img {
+                position: absolute;
+                width: 100%;
+            }
+        }
+        .container-infos {
+            position: absolute;
+            width: 100%;
+            height: 900px;
+            top: 0;
+            display: flex;
+            div {
+                width: 50%;
+                height: 100%;
+            }
+            .images {
+                background-color: green;
+            }
+            .text {
+                background-color: red;
+            }
+        }
     }
-
 }
 
 @import './media-queries/header.scss';
+@import './media-queries/features.scss';
 

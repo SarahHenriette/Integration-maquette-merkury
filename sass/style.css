@@ -1,12 +1,13 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  margin: auto;
 }
 body header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr 2fr;
-  height: 1100px;
+  height: 1296px;
   width: 100%;
   background-color: #0e1a35;
   overflow: hidden;
@@ -90,11 +91,12 @@ body header .text-header span {
 body header .text-header button {
   color: #FFF;
   background-color: #5584ff;
-  padding: 20px 125px;
+  padding: 20px 71px;
   border-radius: 50px;
   font-size: 20px;
   font-weight: 600;
   margin-top: 70px;
+  border: none;
 }
 body header .image-header {
   display: flex;
@@ -104,14 +106,135 @@ body header .image-header {
   top: 780px;
 }
 body .features {
-  height: 600px;
   width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 2fr;
+  margin-top: 15%;
+}
+body .features .points-features {
+  display: flex;
+  grid-column: 1/span 5;
+  grid-row: 1/span 1;
+  justify-content: space-around;
+}
+body .features .points-features .point-break {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 41px;
+}
+body .features .points-features .point-break p {
+  text-align: center;
+  color: #8492af;
+  width: 365px;
+}
+body .features .points-features .point-break .title-feature {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 0;
+  color: #000;
+  width: 100%;
+}
+body .features .points-features .point-break button {
+  color: #000;
+  background-color: #FFF;
+  padding: 15px 81px;
+  border-radius: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  border: none;
+  border: solid 1px #dde1e9;
+}
+body .features .infos-features {
+  grid-column: 2/span 5;
+  grid-row: 2/span 2;
+  display: flex;
+  margin-top: 10%;
+}
+body .features .infos-features .text-infos-features {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .features .infos-features .text-infos-features .title-info {
+  font-size: 65px;
+  font-weight: 200;
+  width: 100%;
+  color: #000;
+}
+body .features .infos-features .text-infos-features p {
+  font-size: 19px;
+  margin-bottom: 28px;
+  width: 91%;
+  font-weight: 500;
+  color: #8492af;
+  margin-top: 0px;
+}
+body .features .infos-features .text-infos-features .check-info {
+  color: #5584ff;
+  font-size: 23px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+body .features .infos-features .text-infos-features .check-info i {
+  color: #5584ff;
+  margin-right: 15px;
+}
+body .features .infos-features .image-infos-features {
+  width: 60%;
+  position: relative;
+}
+body .features .infos-features .image-infos-features img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+body .drapDrop {
+  position: relative;
+  background-color: #0e1a35;
+  height: 900px;
+  margin-top: 20%;
+  overflow: hidden;
+}
+body .drapDrop .images-background {
+  height: 900px;
+  overflow: hidden;
+}
+body .drapDrop .images-background img {
+  position: absolute;
+  width: 100%;
+}
+body .drapDrop .container-infos {
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  top: 0;
+  display: flex;
+}
+body .drapDrop .container-infos div {
+  width: 50%;
+  height: 100%;
+}
+body .drapDrop .container-infos .images {
+  background-color: green;
+}
+body .drapDrop .container-infos .text {
+  background-color: red;
 }
 
 @media screen and (max-width: 1350px) {
   body header #nav ul li a {
     font-size: 20px;
     margin: 36px;
+  }
+  body header .text-header button {
+    padding: 20px 75px;
   }
 }
 @media screen and (max-width: 1180px) {
@@ -196,6 +319,67 @@ body .features {
   }
   body header .text-header span {
     font-size: 27px;
+  }
+}
+@media screen and (max-width: 1875px) {
+  body .features .infos-features {
+    flex-direction: column;
+  }
+  body .features .infos-features .text-infos-features {
+    width: 100%;
+  }
+  body .features .infos-features .image-infos-features {
+    width: 100%;
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  body .features {
+    margin-top: 18%;
+    grid-template-rows: 1fr 1fr;
+  }
+  body .features .points-features {
+    flex-direction: column;
+  }
+  body .features .points-features .point-break {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .features {
+    margin-top: 54%;
+  }
+}
+@media screen and (max-width: 769px) {
+  body .features .infos-features .text-infos-features p {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  body .features .infos-features .text-infos-features .title-info {
+    font-size: 45px;
+    font-size: 46px;
+  }
+  body .features .infos-features .text-infos-features .check-info {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 769px) {
+  body .features .infos-features {
+    margin-top: 0;
+  }
+  body .features .infos-features .text-infos-features .title-info {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 415px) {
+  body .features .points-features .point-break button {
+    font-size: 25px;
+  }
+  body .features .infos-features .text-infos-features p {
+    font-size: 16px;
+  }
+  body .features .infos-features .text-infos-features .check-info {
+    font-size: 19px;
   }
 }
 

@@ -2,7 +2,7 @@ header {
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 2fr;
-    height: 1100px;
+    height: 1296px;
     width: 100%;
     background-color: #0e1a35;
     overflow: hidden;
@@ -86,11 +86,12 @@ header {
         button {
             color: #FFF;
             background-color: #5584ff;
-            padding: 20px 125px;
+            padding: 20px 71px;
             border-radius: 50px;
             font-size: 20px;
             font-weight: 600;
             margin-top: 70px;
+            border: none;
         }
     }
     .image-header {
@@ -101,6 +102,8 @@ header {
         // height: 600px;
         position: absolute;
         top: 780px;
+        // max-width: 1925px;
+
     }
   
 }
