@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr;
+  height: 1100px;
+  width: 100%;
+  background-color: #0e1a35;
+  overflow: hidden;
+}
+body header #nav {
+  grid-column: 1/span 3;
+  grid-row: 1/span 1;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2%;
+  padding-left: 5%;
+}
+body header #nav ul {
+  display: flex;
+  padding-left: 0;
+}
+body header #nav ul li {
+  list-style: none;
+}
+body header #nav ul li a {
+  font-size: 24px;
+  color: #f1f2f3;
+  text-decoration: none;
+  margin: 45px;
+}
+body header #nav ul .button-login {
+  color: #3d61bc;
+  border: 1px #3d61bc solid;
+  border-radius: 50px;
+  padding: 12px 45px;
+}
+body header #nav .menu-burger {
+  display: none;
+  height: 45px;
+  width: 45px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body header #nav .menu-burger div {
+  width: 100%;
+  height: 5px;
+  background-color: #FFF;
+}
+body header .images-background {
+  grid-column: 1/span 3;
+  grid-row: 1/span 5;
+  position: relative;
+}
+body header .images-background img {
+  width: 100%;
+  position: absolute;
+}
+body header .images-background img:first-child {
+  top: 200px;
+}
+body header .images-background img:last-child {
+  top: 0;
+}
+body header .text-header {
+  grid-column: 1/span 3;
+  grid-row: 3/span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body header .text-header p {
+  font-size: 55px;
+  color: #FFF;
+  font-weight: 100;
+  margin: 28px;
+}
+body header .text-header span {
+  color: #8492af;
+  font-size: 48px;
+  font-weight: 700;
+  font-size: 36px;
+}
+body header .text-header button {
+  color: #FFF;
+  background-color: #5584ff;
+  padding: 20px 125px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+body header .image-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 780px;
+}
+body .features {
+  height: 600px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  body header #nav ul li a {
+    font-size: 20px;
+    margin: 36px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  body header #nav img {
+    width: 205px;
+    height: auto;
+  }
+  body header #nav ul li a {
+    font-size: 17px;
+    margin: 25px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  body header {
+    height: 825px;
+  }
+  body header #nav img {
+    width: 189px;
+    height: auto;
+  }
+  body header .text-header p {
+    font-size: 48px;
+  }
+  body header .image-header {
+    top: 635px;
+  }
+  body header .image-header img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 970px) {
+  body header #nav {
+    padding-right: 5%;
+  }
+  body header #nav ul li {
+    display: none;
+  }
+  body header #nav .menu-burger {
+    display: flex;
+  }
+  body header .text-header p {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  body header .text-header button {
+    padding: 15px 38px;
+  }
+}
+@media screen and (max-width: 740px) {
+  body header {
+    height: 675px;
+  }
+  body header #nav ul {
+    margin-top: 32px;
+  }
+  body header .text-header {
+    grid-row: 2/span 2;
+    margin-top: 57px;
+  }
+  body header .text-header p {
+    font-size: 34px;
+  }
+  body header .text-header button {
+    margin-top: 49px;
+  }
+  body header .image-header {
+    top: 509px;
+  }
+}
+@media screen and (max-width: 645px) {
+  body header .text-header p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 540px) {
+  body header .text-header {
+    margin-top: 7px;
+  }
+  body header .text-header p {
+    font-size: 40px;
+    width: 314px;
+  }
+  body header .text-header span {
+    font-size: 27px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
