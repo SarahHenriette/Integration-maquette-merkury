@@ -81,6 +81,10 @@
         .image-infos-features {
             width: 60%;
             position: relative;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img {
                 width: 100%;
                 height: auto;

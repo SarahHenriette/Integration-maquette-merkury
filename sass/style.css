@@ -189,43 +189,125 @@ body .features .infos-features .text-infos-features .check-info i {
 body .features .infos-features .image-infos-features {
   width: 60%;
   position: relative;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .features .infos-features .image-infos-features img {
   width: 100%;
   height: auto;
   position: absolute;
 }
-body .drapDrop {
+body .drag-drop {
+  display: flex;
+  height: 750px;
+  width: 100%;
   position: relative;
   background-color: #0e1a35;
-  height: 900px;
-  margin-top: 20%;
   overflow: hidden;
+  margin-top: 5%;
 }
-body .drapDrop .images-background {
-  height: 900px;
-  overflow: hidden;
-}
-body .drapDrop .images-background img {
+body .drag-drop .backgroung-image img {
   position: absolute;
   width: 100%;
 }
-body .drapDrop .container-infos {
-  position: absolute;
-  width: 100%;
-  height: 900px;
-  top: 0;
-  display: flex;
-}
-body .drapDrop .container-infos div {
+body .drag-drop .images {
+  height: 750px;
   width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+body .drag-drop .images .col-1 {
+  z-index: 510;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 108px;
+  padding-left: 84px;
+}
+body .drag-drop .images .col-1 p {
+  font-size: 30px;
+  color: #FFF;
+  font-weight: 600;
+}
+body .drag-drop .images .col-1 p span {
+  color: #8492af;
+}
+body .drag-drop .images .col-1 .img1 {
+  width: 80%;
+}
+body .drag-drop .images .col-1 .img1 img {
+  width: 100%;
+}
+body .drag-drop .images .col-1 .img2 {
+  width: 536px;
+  height: 246px;
+  position: relative;
+  margin-left: -46px;
+  margin-top: -37px;
+}
+body .drag-drop .images .col-1 .img2 img {
+  width: auto;
   height: 100%;
 }
-body .drapDrop .container-infos .images {
-  background-color: green;
+body .drag-drop .images .col-1 .img2 .img-hand {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 145px;
 }
-body .drapDrop .container-infos .text {
-  background-color: red;
+body .drag-drop .images .col-2 {
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -51px;
+  padding-top: 10px;
+  padding-right: 22px;
+}
+body .drag-drop .images .col-2 p {
+  font-size: 30px;
+  color: #FFF;
+  font-weight: 600;
+}
+body .drag-drop .images .col-2 p span {
+  color: #8492af;
+}
+body .drag-drop .images .col-2 .drop-here {
+  height: 100px;
+  width: 99%;
+  border-color: #8492af;
+  border-style: dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  color: #8492af;
+  font-weight: 700;
+  border-width: 1.5px;
+}
+body .drag-drop .text {
+  height: 750px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 103px;
+}
+body .drag-drop .text h3 {
+  font-size: 60px;
+  font-weight: 200;
+  color: #FFF;
+  margin-bottom: 26px;
+}
+body .drag-drop .text p {
+  width: 60%;
+  color: #8492af;
+}
+body .drag-drop .text .btn i {
+  color: #8492af;
+  margin: 10px 5px;
 }
 
 @media screen and (max-width: 1350px) {
@@ -380,6 +462,67 @@ body .drapDrop .container-infos .text {
   }
   body .features .infos-features .text-infos-features .check-info {
     font-size: 19px;
+  }
+}
+@media screen and (max-width: 1775px) {
+  body .drag-drop .images .col-1 {
+    width: 50%;
+    padding-left: 21px;
+    padding-right: 10px;
+  }
+  body .drag-drop .images .col-1 .img2 {
+    width: 460px;
+    height: 223px;
+  }
+  body .drag-drop .images .col-1 .img2 img {
+    height: 95%;
+  }
+  body .drag-drop .images .col-1 .img2 .img-hand {
+    height: 115px;
+    bottom: 17px;
+  }
+  body .drag-drop .images .col-2 {
+    width: 41%;
+    padding-top: 31px;
+  }
+}
+@media screen and (max-width: 1635px) {
+  body .drag-drop .images .col-1 .img2 {
+    width: 432px;
+  }
+  body .drag-drop .images .col-1 .img2 img {
+    height: 92%;
+  }
+}
+@media screen and (max-width: 1575px) {
+  body .drag-drop .images .col-1 .img2 img {
+    height: 89%;
+  }
+}
+@media screen and (max-width: 1090px) {
+  body .drag-drop {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  body .drag-drop .images {
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+  }
+  body .drag-drop .images .col-1 .img2 {
+    height: 283px;
+    width: 539px;
+  }
+  body .drag-drop .images .col-1 .img2 .img-hand {
+    bottom: 50px;
+  }
+  body .drag-drop .images .col-2 {
+    padding-top: 13px;
+    padding-bottom: 45px;
+  }
+  body .drag-drop .text {
+    width: 100%;
+    height: 50%;
   }
 }
 
